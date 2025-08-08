@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Estudos de 6 Meses para Game Hacking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .month-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+        .week-section {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .task-item input[type="checkbox"] {
+            accent-color: #3b82f6;
+        }
+        .link-item {
+            color: #3b82f6;
+            text-decoration: underline;
+        }
+        .link-item:hover {
+            color: #1d4ed8;
+        }
+        .notes-section {
+            margin-top: 1rem;
+        }
+        .notes-section textarea {
+            width: 100%;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body class="p-6 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-8">Plano de Estudos de 6 Meses para Game Hacking</h1>
+    <p class="text-gray-600 mb-4">Comunidades recomendadas: <a href="https://guidedhacking.com" class="link-item" target="_blank">GuidedHacking</a>, <a href="https://unknowncheats.me" class="link-item" target="_blank">UnknownCheats</a></p>
+    
+    <!-- Mês 1 -->
+    <div class="month-section p-6">
+        <h2 class="text-2xl font-semibold mb-4">Mês 1: Fundamentos Avançados</h2>
+        <p class="text-gray-600 mb-4">Meta: Dominar C++ para cheats, entender engenharia reversa e leitura de memória.</p>
+        
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 1: Revisão de C++ para Game Hacking</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w1t1">
+                    <label for="w1t1">Ponteiros, referências, casting (reinterpret_cast)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w1t2">
+                    <label for="w1t2">Structs e classes para representar dados do jogo</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w1t3">
+                    <label for="w1t3">Manipulação de memória com ReadProcessMemory/WriteProcessMemory</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w1t4">
+                    <label for="w1t4">Praticar alocação dinâmica (new/delete)</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://www.geeksforgeeks.org/cpp-pointers/" class="link-item" target="_blank">Ponteiros em C++ (GeeksForGeeks)</a></li>
+                <li><a href="https://www.google.com/search?q=ReadProcessMemory+site:guidedhacking.com" class="link-item" target="_blank">Pesquisar: ReadProcessMemory site:guidedhacking.com</a></li>
+                <li><a href="https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/" class="link-item" target="_blank">Alocação Dinâmica em C++</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 2: Leitor de Memória Básico</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w2t1">
+                    <label for="w2t1">Usar Cheat Engine para encontrar valores dinâmicos</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w2t2">
+                    <label for="w2t2">Criar leitor de memória para jogo simples (ex.: AssaultCube)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w2t3">
+                    <label for="w2t3">Imprimir coordenadas do jogador no console</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://guidedhacking.com/threads/assaultcube-cheat-engine-guide.8911/" class="link-item" target="_blank">Guia Cheat Engine para AssaultCube</a></li>
+                <li><a href="https://assault.cubers.net/" class="link-item" target="_blank">Download do AssaultCube</a></li>
+                <li><a href="https://www.cheatengine.org/" class="link-item" target="_blank">Cheat Engine</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 3: Introdução à Engenharia Reversa</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w3t1">
+                    <label for="w3t1">Instalar e aprender uso básico do x64dbg</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w3t2">
+                    <label for="w3t2">Instalar e aprender uso básico do IDA Free</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w3t3">
+                    <label for="w3t3">Aprender Assembly básico (x86/x64)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w3t4">
+                    <label for="w3t4">Entender estruturas comuns (UWorld, GameInstance, PlayerController)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w3t5">
+                    <label for="w3t5">Praticar com Cheat Engine para encontrar offsets</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://x64dbg.com/#start" class="link-item" target="_blank">Tutorial do x64dbg</a></li>
+                <li><a href="https://www.google.com/search?q=assembly+crash+course+site:guidedhacking.com" class="link-item" target="_blank">Pesquisar: assembly crash course site:guidedhacking.com</a></li>
+                <li><a href="https://guidedhacking.com/threads/cheat-engine-tutorial-guide.9876/" class="link-item" target="_blank">Tutorial Cheat Engine (GuidedHacking)</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 4: Dump e Estruturas</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w4t1">
+                    <label for="w4t1">Criar dump do jogo</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w4t2">
+                    <label for="w4t2">Identificar offsets importantes (posição, vida)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w4t3">
+                    <label for="w4t3">Validar offsets com Cheat Engine</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w4t4">
+                    <label for="w4t4">Documentar no Notion/OneNote</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://processhacker.sourceforge.io/" class="link-item" target="_blank">Process Hacker (dump)</a></li>
+                <li><a href="https://github.com/ReClassNET/ReClass.NET" class="link-item" target="_blank">ReClass.NET</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+        <div class="notes-section">
+            <p><strong>Checkpoint Mensal:</strong> Revise o progresso, teste seu leitor de memória em outro jogo simples e ajuste o plano se necessário.</p>
+        </div>
+    </div>
+
+    <!-- Mês 2 -->
+    <div class="month-section p-6">
+        <h2 class="text-2xl font-semibold mb-4">Mês 2: Cheats Externos e Internos</h2>
+        <p class="text-gray-600 mb-4">Meta: Criar cheats externos e iniciar injeção interna.</p>
+        
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 5: Overlay Externo</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w5t1">
+                    <label for="w5t1">Aprender ImGui + DirectX11</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w5t2">
+                    <label for="w5t2">Estudar OpenProcess para leitura de processos externos</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w5t3">
+                    <label for="w5t3">Criar overlay transparente</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w5t4">
+                    <label for="w5t4">ESP básico (caixa, nome, distância)</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://www.google.com/search?q=DirectX11+overlay+imgui+site:guidedhacking.com" class="link-item" target="_blank">Pesquisar: DirectX11 overlay imgui site:guidedhacking.com</a></li>
+                <li><a href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess" class="link-item" target="_blank">Documentação OpenProcess</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 6: WorldToScreen</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w6t1">
+                    <label for="w6t1">Estudar matrizes de projeção (View/Projection Matrix)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w6t2">
+                    <label for="w6t2">Implementar WorldToScreen</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w6t3">
+                    <label for="w6t3">Exibir ESP baseado na câmera</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://www.google.com/search?q=WorldToScreen+Unreal+Engine+site:unknowncheats.me" class="link-item" target="_blank">Pesquisar: WorldToScreen Unreal Engine site:unknowncheats.me</a></li>
+                <li><a href="https://www.gamedev.net/articles/programming/graphics/perspective-projections-and-transformations-r696" class="link-item" target="_blank">Matrizes de Projeção</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 7: Injeção de DLL</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w7t1">
+                    <label for="w7t1">Criar injetor com LoadLibrary</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w7t2">
+                    <label for="w7t2">Testar injeção manual (Manual Map Injection)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w7t3">
+                    <label for="w7t3">Criar DLL que imprime texto no jogo</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://guidedhacking.com/threads/dll-injection-methods.8414/" class="link-item" target="_blank">Noções Básicas de Injeção de DLL</a></li>
+                <li><a href="https://www.google.com/search?q=manual+map+injection+site:guidedhacking.com" class="link-item" target="_blank">Pesquisar: manual map injection site:guidedhacking.com</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 8: MinHook e Detours</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w8t1">
+                    <label for="w8t1">Aprender MinHook para interceptação de funções</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w8t2">
+                    <label for="w8t2">Estudar Detours como alternativa ao MinHook</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w8t3">
+                    <label for="w8t3">Hookar função de renderização para ESP interno</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://github.com/TsudaKageyu/minhook" class="link-item" target="_blank">MinHook GitHub</a></li>
+                <li><a href="https://github.com/microsoft/Detours" class="link-item" target="_blank">Detours GitHub</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+        <div class="notes-section">
+            <p><strong>Checkpoint Mensal:</strong> Teste seu ESP externo e interno em um jogo simples. Verifique a estabilidade e documente problemas.</p>
+        </div>
+    </div>
+
+    <!-- Mês 3 -->
+    <div class="month-section p-6">
+        <h2 class="text-2xl font-semibold mb-4">Mês 3: Anticheats</h2>
+        <p class="text-gray-600 mb-4">Meta: Entender e começar a burlar proteções.</p>
+        
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 9: Como Funcionam os Anticheats</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w9t1">
+                    <label for="w9t1">Estudar Usermode x Kernelmode</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w9t2">
+                    <label for="w9t2">Ler sobre Ricochet, EAC, BattlEye, Vanguard</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w9t3">
+                    <label for="w9t3">Estudar heurísticas de detecção comportamental</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://www.google.com/search?q=anticheat+architecture+site:guidedhacking.com" class="link-item" target="_blank">Pesquisar: anticheat architecture site:guidedhacking.com</a></li>
+                <li><a href="https://www.google.com/search?q=anticheat+heuristic+detection+site:unknowncheats.me" class="link-item" target="_blank">Pesquisar: anticheat heuristic detection site:unknowncheats.me</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 10: Detecção de Cheats</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w10t1">
+                    <label for="w10t1">Aprender sobre assinaturas e hash</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w10t2">
+                    <label for="w10t2">Analisar módulos carregados no jogo</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w10t3">
+                    <label for="w10t3">Testar detecção com ScyllaHide</label>
+                </li>
+            </ul>
+            <p class="mt-2"><strong>Recursos:</strong></p>
+            <ul class="list-none pl-5 space-y-1">
+                <li><a href="https://processhacker.sourceforge.io/" class="link-item" target="_blank">Process Hacker (lista de módulos)</a></li>
+                <li><a href="https://github.com/x64dbg/ScyllaHide" class="link-item" target="_blank">ScyllaHide GitHub</a></li>
+            </ul>
+            <div class="notes-section">
+                <p><strong>Anotações:</strong></p>
+                <textarea rows="4" placeholder="Registre offsets, descobertas ou problemas"></textarea>
+            </div>
+        </div>
+
+        <div class="week-section">
+            <h3 class="text-xl font-medium">Semana 11: Driver de Kernel</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li class="task-item">
+                    <input type="checkbox" id="w11t1">
+                    <label for="w11t1">Instalar Windows Driver Kit (WDK)</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w11t2">
+                    <label for="w11t2">Estudar assinatura de drivers</label>
+                </li>
+                <li class="task-item">
+                    <input type="checkbox" id="w11t3">
+                    <label for="w11t3">Criar driver Hello World</label>
+               
